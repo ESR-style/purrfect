@@ -1,0 +1,233 @@
+/* For Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --accent: #ff9a24;
+  --black: #131313;
+}
+body {
+  min-height: 100vh;
+}
+
+section {
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: var(--black);
+    padding: 30px 50px;
+    transition: all 0.4s ease-out;
+    filter: drop-shadow(5px 5px 10px transparent);
+}
+nav.sticky{
+    background-color: white;
+    filter: drop-shadow(5px 5px 10px rgba(246, 193, 86, 0.749));
+}
+.brand{
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    color: var(--black);
+}
+.brand h1{
+    font-size: 32px;
+    font-weight: 900;
+}
+.accent{
+    color: var(--accent);
+}
+.brand:hover{
+    opacity: 0.8;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:42px;
+}
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 24px;
+    border-radius: 32px;
+    font-weight: 400;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    padding: 10px;
+}
+.menu a:hover{
+    background-color: var(--accent);
+    color: white;
+}
+.btn{
+    color: white;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+.btn-2{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    background-color: transparent;
+    transition: all ease-in-out 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.btn-2 i{
+    font-size: 32px;
+    transition: all 0.2 ease-out;
+}
+.btn-2:hover i{
+    color: var(--accent);
+}
+.btn-2:hover{
+    gap: 10px;
+}
+
+/* mainpage */
+
+.hero-page{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/img/hero-background-image.png);
+}
+.hero-headlines{
+    display: flex;
+    align-items: center;
+    width: 750px;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-headlines h1{
+    font-size: 64px;
+    font-weight: 900;
+}
+.hero-headlines p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.hero-headlines-buttons{
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+.btn-3{
+    width: 205px;
+    height: 53px;
+    background-color: var(--black);
+    color: white;
+    font-size: 24px;
+    border-radius: 24px;
+    border: 1px solid black;
+    transition: all 0.2s ease-out;
+}
+.btn-3:hover{
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+}
+.btn-transparent{
+    background-color: transparent;
+    color: var(--black);
+
+}
+.btn-transparent:hover{
+  color: white;
+    background-color: var(--accent);
+}
+
+.hero-images{
+    display: flex;
+    margin-top: 56px;
+    gap: 35px;
+}
+.temp{
+    width: 100%;
+    height: 1000px;
+}
+
+/* requirements section */
+.requirements{
+    margin-top: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("img/img/requirements-background-img.png");
+    gap: 85px;
+    
+}
+
+.requirements-headlines{
+    width: 658px;
+}
+
+.requirements-headlines h1{
+    font-size: 75px;
+    font-weight: 900;
+    
+}
+
+.requirements-headlines p{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 49px;
+}
+
+.r-item-container{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.r-item{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.r-logo{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--black);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 0.8;
+}
+
+.r-logo i{
+    font-size: 28px;
+    color: white;
+}
+
+.r-item h5{
+    font-size: 22px;
+    font-weight: 600;
+}
